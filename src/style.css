@@ -1,11 +1,19 @@
+html {
+font-family: 'Roboto', sans-serif;
+}
+
 *{
   box-sizing: border-box 
 } 
-.body-1 {
-   background-image: url("fondodata2.jpg"); 
+ .body-1 {
+   background-image: url("fondorespons.jpg"); 
+   background-position: center center;
    background-repeat: no-repeat;
+   background-attachment: fixed;
    background-size: cover;  
- } 
+   background-color: black;
+ }  
+ /*  // Mauqetado de la nav bar  */
 
  .navbar-logo img {
   width: 160px;
@@ -14,12 +22,7 @@
  .navbar-logo img:hover {
    filter: opacity(.5);
  }
-
- #icon-list {
-  color:white;
-  font-size: 30px;
-  margin: 10px;
-}
+  /* Barra de busqueda */
 
 .search-input{
   height: 50px;
@@ -27,12 +30,12 @@
   background-color: rgb(243, 243, 243);
   border-radius: 10px;
 }
-
-
+   /* Lupa*/
 button{
   height: 50px; 
   border-radius: 13px;
 }
+
 nav {
   background-color: black;
   padding: 15px;
@@ -40,53 +43,112 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  position: fixed;
+  width: 100%;
+  top:0%;
+} 
+   /* Menu de categorias -filtros- */
+   .item ul, aside input[type="checkbox"]{
+  display: none;
 }
-
-aside {
-  width: 250px;
-  top:0;
-  bottom:0;
-  background: rgba(0,0,0,0.1)
+#menu:checked ~ .item input:checked ~ ul{
+  display: block;
 }
-aside ul{
-  position:relative;
-  list-style-type: none;
-}
-
-aside ul li {
-  display: flex;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.15em;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: white;
-  padding: 10px 15px;
-  height: 50px;
-  transition: .5s ease;
-  
+/*aside {
+  font-family: monospace;
+  color:aliceblue;
+  font-size: 20px;+*/
+label:hover {
+  cursor: pointer;
 }
 
 aside ul li:hover {
   background: rgb(73, 182, 182);
-
 }
 
-aside ul ul {
-  position: absolute;
-  left: 100px;
-  width:250px;
-  top: 0;
-  display: none;
-}
-
-aside ul .dropdown {
+label {
+  width: 100%;
+  display: block;
+  z-index: 3;
   position: relative;
-  display: initial;
+}
+aside {
+  width: 30%;
+  margin-top: 10%;
+  overflow-x: hidden;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .2);
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  width: 20%;
 
 }
 
-aside ul .dropdown:hover ul {
-  display: initial;
+#nav-icon{
+ font-size: 25px;
+ line-height: 50px;
+ padding-left: 1em;
+ color: white
 }
+aside ul, aside li, label{
+  line-height: 40px;
+  margin: 0px;
+  padding: 0 1em;
+  list-style: none;
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
+  font-weight: 100;
+  width: 100%;
+}
+.item ul{
+  padding: 0 0.25em ;
+}
+aside li a {
+  line-height: 50px;
+  margin: 0px;
+  padding: 0 1em;
+  list-style: none;
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
+  font-weight: 100;
+
+}
+   /* ordenar de la A-Z*/
+#select-order {
+  margin-top: 8%;
+  position: fixed;
+}
+
+
+.flex-container {
+  margin-left: 21%;
+  padding-left: 2%;
+  padding-top: 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around
+}
+
+.character{
+  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+}
+
+.character, img {
+  height: 250px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 

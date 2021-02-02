@@ -22,18 +22,19 @@
 
 <!--     <div id="root">
     </div> -->
-  <div id="data-container">
+<!--   <div id="data-container">
     <select id="select-order">
       <option value="value0" selected>Ordenar por</option>
       <option value="value1">A-Z</option>
       <option value="value2">Z-A</option>
     </select>
-  </div>
+  </div> -->
+  
 
 <!-- Menu tipo hamburgesa -->
     <aside>
       <input type="checkbox" id="menu">
-      <label for="menu" id=nav-icon>&#9776; Categorias</label>
+      <label for="menu" id="nav-icon">&#9776; Categorias</label>
 <!-- elementos dentro del menu-->  
      <div class="item">
       <input type="checkbox" id="A">
@@ -46,7 +47,7 @@
      </div>
       <!-- elementos dentro del estado de genero-->
      <div class= "item">
-       <input type="checkbox" id=B >
+       <input type="checkbox" id="B" >
        <label for="B">Género</label>
         <ul>
           <li><a href="#">Femenino</a></li>
@@ -69,10 +70,15 @@
      </div>
  </aside>
 
+<!-- Ordenar por-->
+<div class="alphabet"> </div>
+
+<!--Cartas de personajes-->
   <div class="flex-container"> 
     <div class="character"> </div>
   </div>  
 
+  
     <script src="main.js" type="module"></script>
   </body>
 </html>

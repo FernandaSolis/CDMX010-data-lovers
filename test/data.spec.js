@@ -1,4 +1,5 @@
-import { example, anotherExample } from '../src/data.js';
+import {buidlCard} from '../src/main.js';
+import {example, anotherExample} from '../src/data.js'
 
 
 describe('example', () => {
@@ -21,3 +22,14 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+
+/* 
+describe('test para revisar que builCard efectivamente sea una funcion', () => {
+  it('es una funcion', () => {
+    expect(typeof buidlCard).toBe('undefined');
+  });
+
+  it('returns `buildCard`', () => {
+    expect(buidlCard()).toBe('character');
+  });
+});  */

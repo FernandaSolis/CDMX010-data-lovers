@@ -1,12 +1,37 @@
-//import dataRM from './rickandmorty.js';
-
 import dataRM from './data/rickandmorty.js';
+
 //import { filterByGender, filterByStatus } from './data.js'
+
+//import {filterByGender} from './data.js'
 
 document.addEventListener('DOMContentLoaded',function(){
     buildCard(dataRM.results)
+    
 })
 let characterCard=document.querySelector('.character')
+
+ //Imprime Card de personajes
+ function buildCard(data){
+    
+    data.forEach(character => {
+        let {image,name,id}=character;
+
+        let setCard=document.createElement('div')
+            setCard.innerHTML=`
+            <div class="characterCard">
+                <div class="imageCharacter">
+                    <img src = "${image}"/> </div>
+                <div class="info">
+                    <h1 class="name">${name}</h1>
+                    <p class="number"> # ${id} </p>
+                    <button id=${id}>ver detalles</button>
+                </div>
+            </div> 
+        ` 
+        characterCard.appendChild(setCard) 
+    });
+
+}
 
 /* const selector = document.getElementById('selector')
 
@@ -24,23 +49,6 @@ selector2.addEventListener('change', (event) => {
     buildCard(filteredCharacters)
 })
  */
-function buildCard(data){
-    
-    data.forEach(characters => {
-        let imageCharacter=document.createElement('img')
-        imageCharacter.src=`${characters.image}`
-        characterCard.appendChild(imageCharacter)
-
-        let titleName=document.createElement('h1')//<p></p>
-        titleName.textContent=`${characters.name}` //aqui usar inner html con los  <p>id nombre</p>
-        characterCard.appendChild(titleName) //<div class="character"> <p>nombre</p> </div>
-
-        let parrafoId=document.createElement('p')
-        parrafoId.textContent=`${characters.id}`
-        characterCard.appendChild(parrafoId)
 
 
-    });
-
-}
-
+ 

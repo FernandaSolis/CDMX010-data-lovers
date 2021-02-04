@@ -35,67 +35,65 @@
     <label for="menu" id=nav-icon>&#9776; Categorias</label>
 <!-- elementos dentro del menu-->  
    <div class="item">
-    <input type="checkbox" id="A">
-    <label for="A">Estado de Vida</label>
+    <li class="vida">Estado de Vida</li>
     <!-- elementos dentro del estado de vida-->
      <ul>
        <li> <div class="sub-item">
-         <input type="checkbox" id="A1">
+         <input type="radio" id="alive" name="status" value="Alive">
          <label for="A1">Vivo</label>
        </div></li>
        <li> <div class="sub-item">
-        <input type="checkbox" id="A2">
+        <input type="radio" id="dead" name="status" value="Dead">
         <label for="A2">Muerto</label>
+      </div></li>
+      <li> <div class="sub-item">
+        <input type="radio" id="unknown" name="status" value="unknown">
+        <label for="A3">Desconocido</label>
       </div></li>
      </ul>
     </div>
     <!-- Opción filtro  de genero-->
-   <div>
+   <div class="item">
      <li class="genero">Género</li>
       <ul>
     <!-- Opciones sub filtro-->
-        <li> <div>
+        <li> <div class="sub-item">
           <input type="radio" id="female" name="gender" value="Female">
           <label for="female">Femenino</label>
         </div></li>
         <li> <div class="sub-item">
-          <input type="radio" id="male" name="gender" value="male">
+          <input type="radio" id="male" name="gender" value="Male">
           <label for="male">Masculino</label>
         </div></li>
         <li> <div class="sub-item">
-          <input type="radio" id="unknown" name="gender" vale="unknown">
+          <input type="radio" id="unknownDos" name="gender" vale="unknown">
           <label for="unknown">Desconocido</label>
         </div></li>
       </ul>
    </div>
 <!-- elementos dentro del filtro de especie -->
    <div class= "item">
-     <input type="checkbox" id="species" >
-     <label for="species">Especie</label>
+     <li class="species">Especie</li>
       <ul>
         <li> <div class="sub-item">
-          <input type="checkbox" id="human" value="human">
+          <input type="radio" id="human" name="specie" value="Human">
           <label for="human">Humano</label>
         </div></li>
         <li> <div class="sub-item">
-          <input type="checkbox" id="alien" value="alien">
+          <input type="radio" id="alien" name="specie" value="Alien">
           <label for="alien">Alien</label>
         </div></li>
         <li> <div class="sub-item">
-          <input type="checkbox" id="robot" value="robot">
-          <label for="robot">Robot</label>
-        </div></li>
-        <li> <div class="sub-item">
-          <input type="checkbox" id="humanoid" value="humanoid">
+          <input type="radio" id="humanoid" name="specie" value="Humanoid">
           <label for="humanoid">Humanoide</label>
         </div></li>
         <li> <div class="sub-item">
-          <input type="checkbox" id="parasite" value="parasite">
-          <label for="parasite">Parasito</label>
+          <input type="radio" id="animal" name="specie" value="Animal">
+          <label for="animal">Animal</label>
         </div></li>
         <li> <div class="sub-item">
-          <input type="checkbox" id="unknown-specie" value="unknown-specie">
-          <label for="unknown-specie">Desconocido</label>
+          <input type="radio" id="robot" name="specie" value="Robot">
+          <label for="robot">Robot</label>
         </div></li>
       </ul>
    </div>

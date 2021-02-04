@@ -1,16 +1,12 @@
-# Data Lovers Rick and Morty
+# Data Lovers Rick & Morty
 
 ## Índice
 
 * [1. Definición del producto](#1-definición-del-producto)
 * [2. Objetivo del producto](#2-objetivo-del-producto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [3. Historias de usuario](#3-historias-de-usuario)
+* [4. Diseño de la Interfaz de Usuario](#4-diseño-de-la-interfaz-de-usuario)
+* [5. Problemas detectados a través de test de usabilidad](#5-problemas-detectados-a-través-de-test-de-usabilidad)
 
 <!-- ## Índice
 
@@ -28,9 +24,7 @@
 
 ## 1. Definición del producto
 
-Creamos una página web intuitiva con fácil manejo que contiene información sobre los personajes de la serie Rick&Morty. Tienes la opción de encontrar personajes filtrando por Estado de Vida, Género y Especie; ordenado alfabéticamente y buscando directamente por su nombre. Puedes elegir entre una vista en forma de cuadrícula o lista. Cada tarjeta al entrar muestra información específica sobre el personaje seleccionado. 
-
-
+Creamos una página web intuitiva con fácil manejo que contiene información sobre los personajes de la serie Rick & Morty. Tienes la opción de encontrar personajes filtrando por Estado de Vida, Género y Especie; ordenado alfabéticamente y buscando directamente por su nombre. Puedes elegir entre una vista en forma de cuadrícula o lista. Cada tarjeta al entrar muestra información específica sobre el personaje seleccionado. 
 
 <!-- ## 1. Preámbulo
 
@@ -52,9 +46,7 @@ al lado derecho.
 
 ## 2. Objetivo del producto
 
-Concentrar la información de los personajes de la serie en un solo lugar para una búsqueda fácil, rápida y amigable.
-
-
+El objetivo es concentrar los personajes de la serie Rick & Morty en una sola página para tener acceso a ellos mediante una búsqueda fácil, rápida y amigable para poder conocer detalles del personaje deseado. 
 
 <!-- ## 2. Resumen del proyecto
 
@@ -100,6 +92,32 @@ Estos son datos que te proponemos:
   olímpiadas de Río de Janeiro.
   - [Investigación con interesados en juegos olímpicos de Río de Janeiro](/src/data/athletes/README.md) -->
 
+## 3. Historias de usuario
+
+Nuestras historias de usuario se basan en seguidores de Rick & Morty o cualquier persona que quiera conocer más sobre los personajes de esta serie, con ello pueden conocer el contexto. 
+
+### Historia de usuario 1
+**Yo** como usuario **quiero** ver una lista de todos los personajes de la serie **para** conocer detalles de ellos.
+
+### Historia de usuario 2
+
+**Yo** como usuario **quiero** filtrar información relevante **para** hacer más precisa la búsqueda de
+los personajes de mi interés.
+
+### Historia de usuario 3
+
+**Yo** como usuario **quiero** ordenar alfabéticamente los personajes que veo **para** poder ubicarlos
+con mayor facilidad.
+
+### Historia de usuario 4
+
+**Yo** como usuario que conozco los nombres de los personajes **quiero** buscar por nombre **para** encontrar el pesonaje específico que deseo.
+
+### Historia de usuario 5
+
+**Yo** como usuario que ya encontré el personaje de mi interés **quiero** tener información más específica del personaje que elegí **para** saber más datos de este.
+
+<!-- 
 ## 3. Objetivos de aprendizaje
 
 El objetivo principal de este proyecto es que aprendas a diseñar y construir una
@@ -153,15 +171,46 @@ usuario necesita.
 * [ ] Diseñar la aplicación pensando y entendiendo al usuario.
 * [ ] Crear prototipos para obtener feedback e iterar.
 * [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
+* [ ] Planear y ejecutar tests de usabilidad. -->
 
-## 4. Consideraciones generales
+## 4. Diseño de la Interfaz de Usuario
+
+### Prototipo de baja fidelidad  
+
+![prototipo-1](https://raw.githubusercontent.com/FernandaSolis/CDMX010-data-lovers/fer/prototipo1.jpeg) -->
+En nuestro primer prototipo de baja fidelidad se consideró una página de inicio en donde se recibía al usuario con el logo de la serie, una breve descripción de la misma y un botón de conoce más, al pasar a la siguiente ventana entonces se mostraban nuestras tarjetas con los personajes, aparece un menú de filtros y un botón de ordenamiento, así como la barra de buscar, los botones de ver en lista o cuadrícula y en la parte de la cabezara el logo de la serie. Al dar click a las tarjetas entonces aparece la pantalla con información más especñifica de cada personaje. 
+
+![prototipo-1](https://raw.githubusercontent.com/FernandaSolis/CDMX010-data-lovers/fer/prototipo2.jpeg) -->
+Después de iterar y realizar test de usabilidad se llegó a la conclusión de que la pantalla de inicio se eliminara pues solo hacía más largo el proceso de llegar al resultado buscado por el usuario, también vimos que al entrar a una tarjeta ya no existía un botón de regreso y en general se necesitaban de muchos clicks para llegar al resultado esperado. 
+
+### Prototipo de alta fidelidad 
+
+Nuestro prototipo de alta fidelidad se realizó después de obtener nuevamente feedback de usuarios, se creó en Figma. 
+(https://www.figma.com/file/Yi5AixQOwe6x52gX24MxiV/Data-Lovers?node-id=0%3A1)
+
+![desktop-1](https://raw.githubusercontent.com/FernandaSolis/CDMX010-data-lovers/fer/Desktop%20-%201.png) -->
+![desktop-2](https://raw.githubusercontent.com/FernandaSolis/CDMX010-data-lovers/fer/Desktop%20-%202.png) -->
+
+En dicho prototipo vemos el resultado de las últimas modificaciones, implemendando fundamentos de visual design, eligiendo paleta de color, tipografías, jerarquías, alineaciones, etc. El diseño representa el ideal de la solución a entregar.
+
+<!-- ## 4. Consideraciones generales
 
 * Este proyecto se debe resolver en duplas.
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 4 semanas.
+* Tiempo para completarlo: Toma como referencia 4 semanas. -->
 
+## 5. Problemas detectados a través de test de usabilidad
+
+Los problemas que se encontraron fue primero que las pocas páginas que existen con información de los personajes de dicha serie, no son agradables visualemente y son muy complicadas de utilizar.
+
+Con la propuesta del primer prototipo se encontró que el usuario busca llegar rápido a la solución que espera, por ello es que entre menos clicks necesiten, será más práctico y se quedarán en nuestra página.
+
+También se observó que es indispensable un botón para poder regresar a ver la lista de todos los personajes pues si entraban a la información de un personaje y querían consultar más, se complicaba la acción de volver y era más fácil y probable que se salieran de la página.
+
+En cuanto a diseño se pensó que sea limpio y sencillo pero con armonía para que el usuario este cómodo y pueda obtener la información que necesita de una manera más agradable. 
+
+<!-- 
 ## 5. Criterios de aceptación mínimos del proyecto
 
 Los criterios para considerar que has completado este proyecto son:
@@ -239,7 +288,7 @@ Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
 (_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
 (_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
 en la sección de [Consideraciones técnicas](#srcdatajs).
-
+ 
 ## 6. Hacker edition
 
 Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
@@ -489,3 +538,4 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
+ -->

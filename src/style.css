@@ -67,8 +67,8 @@ aside {
   line-height: 50px;
   padding-left: 1em;
   color: white
-  
  }
+
 
 /* .item ul, aside input[type="checkbox"]{
   display: none;
@@ -116,7 +116,6 @@ aside ul, aside li, label{
   padding: 0 1em;
   list-style: none;
   text-decoration: none;
-  font-family: monospace;
   color: white;
   font-weight: 100;
   width: 100%;
@@ -131,7 +130,6 @@ aside li  {
   padding: 0 1em;
   list-style: none;
   text-decoration: none;
-  font-family: monospace;
   color: white;
   font-weight: 100;
 
@@ -176,4 +174,20 @@ aside li  {
 .number {
   text-align: right;
   padding-right: 5%;
+}
+
+/*Detalles de menú*/
+.vida{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.species{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.genero{
+  font-size: 21px;
+  font-weight: bold;
 }

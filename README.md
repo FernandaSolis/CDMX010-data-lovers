@@ -1,6 +1,18 @@
-# Data Lovers
+# Data Lovers Rick and Morty
 
 ## Índice
+
+* [1. Definición del producto](#1-definición-del-producto)
+* [2. Objetivo del producto](#2-objetivo-del-producto)
+* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [4. Consideraciones generales](#4-consideraciones-generales)
+* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [6. Hacker edition](#6-hacker-edition)
+* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
+* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [9. Checklist](#9-checklist)
+
+<!-- ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
@@ -10,11 +22,17 @@
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [9. Checklist](#9-checklist) -->
 
 ***
 
-## 1. Preámbulo
+## 1. Definición del producto
+
+Creamos una página web intuitiva con fácil manejo que contiene información sobre los personajes de la serie Rick&Morty. Tienes la opción de encontrar personajes filtrando por Estado de Vida, Género y Especie; ordenado alfabéticamente y buscando directamente por su nombre. Puedes elegir entre una vista en forma de cuadrícula o lista. Cada tarjeta al entrar muestra información específica sobre el personaje seleccionado. 
+
+
+
+<!-- ## 1. Preámbulo
 
 Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
@@ -30,9 +48,15 @@ En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
 izquierda se puede construir una interfaz amigable y entendible por el usuario
 al lado derecho.
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk) -->
 
-## 2. Resumen del proyecto
+## 2. Objetivo del producto
+
+Concentrar la información de los personajes de la serie en un solo lugar para una búsqueda fácil, rápida y amigable.
+
+
+
+<!-- ## 2. Resumen del proyecto
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
@@ -74,7 +98,7 @@ Estos son datos que te proponemos:
 * [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
   Este set nos proporciona la lista de los atletas que ganaron medallas en las
   olímpiadas de Río de Janeiro.
-  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](/src/data/athletes/README.md)
+  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](/src/data/athletes/README.md) -->
 
 ## 3. Objetivos de aprendizaje
 

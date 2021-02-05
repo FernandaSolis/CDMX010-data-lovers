@@ -10,25 +10,27 @@
     <a class="navbar-logo" href="index.html">
       <img src="logo rickmorty.png">
     </a>
-    <div id="icon-list"> <i class="fas fa-list-ul"></i> </div>
-    
-      <div>
-        <input type="search" class="search-input" placeholder="Buscar...">
-        <button><i class="fas fa-search"></i></button>
-      </div>
+      <form class="form" id="formulario">
+        <input type="text" class="search-input" id="search" placeholder="Buscar...">
+      </form>
+        <!-- <button><i class="fas fa-search"></i></button> -->
+      <!-- Ordenar por-->
+  <div id="order">
+    <select name="order" id="select-order">
+      <option value="">Ordenar por</option>
+      <option value="orderAz">A-Z</option>
+      <option value="orderZa">Z-A</option>
+    </select>
+  </div>
+
   </nav> 
   </head>
   <body class="body-1">
 
 <!--     <div id="root">
     </div> -->
-<!--    <div id="data-container">
-    <select id="select-order">
-      <option value="">Ordenar por</option>
-      <option value="ascendente">A-Z</option>
-      <option value="descendente">Z-A</option>
-    </select>
-  </div>  -->
+
+
 
   <!-- Menu tipo hamburgesa -->
   <aside>
@@ -66,8 +68,8 @@
           <label for="male">Masculino</label>
         </div></li>
         <li> <div class="sub-item">
-          <input type="radio" id="unknownDos" name="gender" vale="unknown">
-          <label for="unknown">Desconocido</label>
+          <input type="radio" id="unknownGender" name="gender" value="unknown">
+          <label for="unknownDos">Desconocido</label>
         </div></li>
       </ul>
    </div>
@@ -98,10 +100,6 @@
       </ul>
    </div>
 </aside>
-
-
-<!-- Ordenar por-->
-<div class="alphabet"> </div>
 
 
 <!--Cartas de personajes-->

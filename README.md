@@ -24,7 +24,7 @@
 
 ## 1. Definición del producto
 
-Creamos una página web intuitiva con fácil manejo que contiene información sobre los personajes de la serie Rick & Morty. Tienes la opción de encontrar personajes filtrando por Estado de Vida, Género y Especie; ordenado alfabéticamente y buscando directamente por su nombre. Puedes elegir entre una vista en forma de cuadrícula o lista. Cada tarjeta al entrar muestra información específica sobre el personaje seleccionado. 
+Se creó una página web intuitiva con fácil manejo que contiene información sobre los personajes de la serie Rick & Morty. Tienes la opción de encontrar personajes filtrando por Estado de Vida, Género y Especie; ordenado alfabéticamente y buscando directamente por su nombre. Puedes elegir entre una vista en forma de cuadrícula o lista. Cada tarjeta al entrar muestra información específica sobre el personaje seleccionado. 
 
 <!-- ## 1. Preámbulo
 
@@ -94,7 +94,7 @@ Estos son datos que te proponemos:
 
 ## 3. Historias de usuario
 
-Nuestras historias de usuario se basan en seguidores de Rick & Morty o cualquier persona que quiera conocer más sobre los personajes de esta serie, con ello pueden conocer el contexto. 
+Las historias de usuario estan basadas en seguidores de Rick & Morty o cualquier persona que quiera conocer más sobre los personajes de esta serie, con ello pueden conocer el contexto. 
 
 ### Historia de usuario 1
 **Yo** como usuario **quiero** ver una lista de todos los personajes de la serie **para** conocer detalles de ellos.
@@ -178,14 +178,14 @@ usuario necesita.
 ### Prototipo de baja fidelidad  
 
 ![prototipo-1](https://raw.githubusercontent.com/FernandaSolis/CDMX010-data-lovers/fer/prototipo1.jpeg) -->
-En nuestro primer prototipo de baja fidelidad se consideró una página de inicio en donde se recibía al usuario con el logo de la serie, una breve descripción de la misma y un botón de conoce más, al pasar a la siguiente ventana entonces se mostraban nuestras tarjetas con los personajes, aparece un menú de filtros y un botón de ordenamiento, así como la barra de buscar, los botones de ver en lista o cuadrícula y en la parte de la cabezara el logo de la serie. Al dar click a las tarjetas entonces aparece la pantalla con información más especñifica de cada personaje. 
+En el primer prototipo de baja fidelidad se consideró una página de inicio en donde se recibía al usuario con el logo de la serie, una breve descripción de la misma y un botón de conoce más, al pasar a la siguiente ventana entonces se mostraban nuestras tarjetas con los personajes, aparece un menú de filtros y un botón de ordenamiento, así como la barra de buscar, los botones de ver en lista o cuadrícula y en la parte de la cabezara el logo de la serie. Al dar click a las tarjetas entonces aparece la pantalla con información más especñifica de cada personaje. 
 
 ![prototipo-1](https://raw.githubusercontent.com/FernandaSolis/CDMX010-data-lovers/fer/prototipo2.jpeg) -->
 Después de iterar y realizar test de usabilidad se llegó a la conclusión de que la pantalla de inicio se eliminara pues solo hacía más largo el proceso de llegar al resultado buscado por el usuario, también vimos que al entrar a una tarjeta ya no existía un botón de regreso y en general se necesitaban de muchos clicks para llegar al resultado esperado. 
 
 ### Prototipo de alta fidelidad 
 
-Nuestro prototipo de alta fidelidad se realizó después de obtener nuevamente feedback de usuarios, se creó en Figma. 
+El prototipo de alta fidelidad se realizó después de obtener nuevamente feedback de usuarios, se creó en Figma. 
 (https://www.figma.com/file/Yi5AixQOwe6x52gX24MxiV/Data-Lovers?node-id=0%3A1)
 
 ![desktop-1](https://raw.githubusercontent.com/FernandaSolis/CDMX010-data-lovers/fer/Desktop%20-%201.png) -->

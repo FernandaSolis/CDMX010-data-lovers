@@ -1,12 +1,10 @@
 import dataRM from './data/rickandmorty.js';
-import { filterByGender, filterByStatus, filterBySpecies } from './data.js'
+import { search, orderData, filterByGender, filterByStatus, filterBySpecies } from './data.js'
 
 document.addEventListener('DOMContentLoaded',function(){
-    buildCard(dataRM.results)
-    
+    buildCard(dataRM.results)    
 })
 let characterCard=document.querySelector('.character')
-
  //Imprime Card de personajes
  function buildCard(data){
     
@@ -27,9 +25,26 @@ let characterCard=document.querySelector('.character')
         ` 
         characterCard.appendChild(setCard) 
     });
-
 }
-
+//Ordenamiento
+ const order = document.getElementById('select-order');
+    order.addEventListener ('change', (event) => {
+    const sortOrder = event.target.value;
+    const orderedData = orderData(dataRM.results, 'name', sortOrder)
+    characterCard.innerHTML=''
+    buildCard(orderedData)
+})  
+//Search
+const searchDos = document.getElementById('search');
+    searchDos.addEventListener ('change', (event) => {
+        //event.preventDefault();           
+        const bar = event.target.value;
+        const barSearch = search(dataRM.results, bar);
+       
+            characterCard.innerHTML=''
+            buildCard(barSearch)        
+    })
+    
 //Filter Status
 const radioAlive = document.getElementById('alive');
 radioAlive.addEventListener('click', (event) => {
@@ -38,7 +53,6 @@ radioAlive.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 const radioDead = document.getElementById('dead');
 radioDead.addEventListener('click', (event) => {
     const status = event.target.value;     
@@ -46,7 +60,6 @@ radioDead.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 const radioUnknownUno = document.getElementById('unknown');
 radioUnknownUno.addEventListener('click', (event) => {
     const status = event.target.value;     
@@ -54,7 +67,6 @@ radioUnknownUno.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 //Filter Género
 const radioFemale = document.getElementById('female');
 radioFemale.addEventListener('click', (event) => {
@@ -63,7 +75,6 @@ radioFemale.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 const radioMale = document.getElementById('male');
 radioMale.addEventListener('click', (event) => {
     const gender = event.target.value;     
@@ -71,17 +82,13 @@ radioMale.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
-const radioUnknownDos = document.getElementById('unknown');
-radioUnknownDos.addEventListener('click', (event) => {
+const radioUnknownGender = document.getElementById('unknownGender');
+radioUnknownGender.addEventListener('click', (event) => {
     const gender = event.target.value;     
     const filteredCharacters = filterByGender(dataRM.results, gender) 
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
-
-
 //Filter Species
 const radioHuman = document.getElementById('human');
 radioHuman.addEventListener('click', (event) => {
@@ -90,7 +97,6 @@ radioHuman.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 const radioAlien = document.getElementById('alien');
 radioAlien.addEventListener('click', (event) => {
     const species = event.target.value;     
@@ -98,7 +104,6 @@ radioAlien.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 const radioHumanoid = document.getElementById('humanoid');
 radioHumanoid.addEventListener('click', (event) => {
     const species = event.target.value;     
@@ -106,7 +111,6 @@ radioHumanoid.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 const radioAnimal = document.getElementById('animal');
 radioAnimal.addEventListener('click', (event) => {
     const species = event.target.value;     
@@ -114,7 +118,6 @@ radioAnimal.addEventListener('click', (event) => {
     characterCard.innerHTML=''
     buildCard(filteredCharacters)
 })
-
 const radioRobot = document.getElementById('robot');
 radioRobot.addEventListener('click', (event) => {
     const species = event.target.value;     
@@ -142,3 +145,6 @@ selector2.addEventListener('change', (event) => {
 
 //  console.log(filterByGender(dataRM.results, 'Female'))
 // console.log(filterByStatus(dataRM.results, 'Alive'))
+//console.log(orderData(dataRM.results, 'name', 'nameAz' ));
+//console.log(orderData(dataRM.results, 'name', 'nameZa' ));
+//console.log(search (dataRM.results, 'Morty Smith'));

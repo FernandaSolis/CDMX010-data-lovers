@@ -15,30 +15,7 @@ font-family: monospace
    background-color: black;
  }  
  /*  Mauqetado de la nav bar  */
-
- .navbar-logo img {
-  width: 160px;
-  height: auto;
- }
- .navbar-logo img:hover {
-   filter: opacity(.5);
- }
-  /* Barra de busqueda */
-
-.search-input{
-  height: 50px;
-  width: 500px;
-  background-color: rgb(243, 243, 243);
-  border-radius: 10px;  
-}
-
-   /* Lupa*/
-button{
-  height: 50px; 
-  border-radius: 13px;
-}
-
-nav {
+ nav {
   background-color: black;
   padding: 15px;
   display: flex;
@@ -48,12 +25,59 @@ nav {
   width: 100%;
   top:0%;
 } 
+ .navbar-logo img {
+  width: 160px;
+  height: auto;
+ }
+ .navbar-logo img:hover {
+   filter: opacity(.5);
+ }
+ /*Ordenamiento*/
+#order {
+  position: fixed;
+  border: 1px solid #ccc;
+  width: 120px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-left: 21.5%;
+  margin-top: 01%;
+  width: 18%;
+  border-radius: .3em;
+}
+#order:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: blue transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+}
+#order select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    appearance: none;
+}
+  /* Barra de busqueda */
+.search-input{
+  height: 50px;
+  width: 500px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;  
+}
+
+
 
 /*Menú de filtros*/
 aside {
   width: 30%;
   margin-top: 6%;
-  overflow-x: hidden;
+  overflow-x: scroll;
   position: fixed;
   background-color: rgba(0, 0, 0, .2);
   flex-direction: column;
@@ -70,7 +94,7 @@ aside {
  }
 
 
-/* .item ul, aside input[type="checkbox"]{
+/*  .item ul, aside input[type="radio"]{
   display: none;
 
 }
@@ -80,7 +104,7 @@ input:checked ~ ul{
 .sub-item input:checked{
   display: block;
 
-} */
+}  */
 .item:hover{
 background: rgb(40, 92, 92);
 }
@@ -89,26 +113,21 @@ label:hover {
 cursor: pointer;
 }
 
-aside ul li:hover {
-background: rgb(73, 182, 182);
-}
-
 label:hover {
   cursor: pointer;
 }
 
 aside ul li:hover {
   background: rgb(73, 182, 182);
+  
 }
 
 label {
   width: 100%;
-  display: block;
+  /* display: block; */
   z-index: 3;
-  position: relative;
+  position: relative;  
 }
-
-
 
 aside ul, aside li, label{
   line-height: 40px;
@@ -117,7 +136,6 @@ aside ul, aside li, label{
   list-style: none;
   text-decoration: none;
   color: white;
-  font-weight: 100;
   width: 100%;
   font-size: 16px;
 }
@@ -131,7 +149,6 @@ aside li  {
   list-style: none;
   text-decoration: none;
   color: white;
-  font-weight: 100;
 
 }
 
@@ -145,6 +162,7 @@ aside li  {
   display: flex;
   justify-content: space-between;
   align-content: space-around;
+  
 }
 
 .character, img {
@@ -178,16 +196,20 @@ aside li  {
 
 /*Detalles de menú*/
 .vida{
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
 }
 
 .species{
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
 }
 
 .genero{
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
+}
+
+.item{
+padding-left: 8%;
 }

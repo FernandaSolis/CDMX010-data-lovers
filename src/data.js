@@ -24,7 +24,32 @@ export const anotherExample = () => {
 //   })
 //   return filteredByGender
 // } 
+//Order
+export const orderData = (data, sortBy, sortOrder) =>{
+if(sortBy === 'name' && sortOrder === 'orderAz'){
+    const orderAz = data.sort((a,b) => {
+    if (a.name < b.name) return -1;
+    if (b.name > b.name) return 1;
+    return 0;
+  });
+  return orderAz;
+} else if (sortBy === 'name' && sortOrder === 'orderZa'){
+  const orderZa = data.sort((a,b) => {
+    if (a.name > b.name) return -1;
+    if (b.name < b.name) return 1;
+    return 0;
+  });
+return orderZa;
+}
+}
 
+//Search
+export const search = function(results, name) {
+  const searchBar = results.filter(function(result){
+    return result.name === name;
+  });
+  return searchBar;
+};
 //Filter Status
 export const filterByStatus = function(results, status) { 
   const filteredStatus = results.filter(function(result) {

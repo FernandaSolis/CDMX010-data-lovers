@@ -1,113 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/8699ef02e6.js" crossorigin="anonymous"></script>
-    
-   <nav>
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8699ef02e6.js" crossorigin="anonymous"></script>
+  <nav>
     <a class="navbar-logo" href="index.html">
       <img src="logo rickmorty.png">
     </a>
-      <form class="form" id="formulario">
-        <input type="text" class="search-input" id="search" placeholder="Buscar...">
-      </form>
-        <!-- <button><i class="fas fa-search"></i></button> -->
-      <!-- Ordenar por-->
-  <div id="order">
-    <select name="order" id="select-order">
-      <option value="">Ordenar por</option>
-      <option value="orderAz">A-Z</option>
-      <option value="orderZa">Z-A</option>
-    </select>
-  </div>
-
-  </nav> 
-  </head>
-  <body class="body-1">
-
-<!--     <div id="root">
-    </div> -->
-
-
-
+    <input type="text" class="search-input" id="search" placeholder="Buscar...">
+    <!-- <button><i class="fas fa-search"></i></button> -->
+    <!-- Ordenar por-->
+    <div id="order">
+      <select name="order" id="select-order">
+        <option value="">Ordenar por</option>
+        <option value="orderAz">A-Z</option>
+        <option value="orderZa">Z-A</option>
+      </select>
+    </div>
+  </nav>
+</head>
+<body class="body-1">
   <!-- Menu tipo hamburgesa -->
   <aside>
-    <label for="menu" id=nav-icon>&#9776; Categorias</label>
-<!-- elementos dentro del menu-->  
-   <div class="item">
-    <li class="vida">Estado de Vida</li>
-    <!-- elementos dentro del estado de vida-->
-     <ul>
-       <li> <div class="sub-item">
-         <input type="radio" id="alive" name="status" value="Alive">
-         <label for="A1">Vivo</label>
-       </div></li>
-       <li> <div class="sub-item">
-        <input type="radio" id="dead" name="status" value="Dead">
-        <label for="A2">Muerto</label>
-      </div></li>
-      <li> <div class="sub-item">
-        <input type="radio" id="unknown" name="status" value="unknown">
-        <label for="A3">Desconocido</label>
-      </div></li>
-     </ul>
+    <label for="menu" id="nav-icon">&#9776; Categorias</label>
+    <!-- elementos dentro del menu-->
+    <div class="item">
+      <button class="life">Estado de Vida</button>
+      <!-- elementos dentro del estado de vida-->
+      <ul>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="alive" name="status" value="Alive">
+            <label for="A1">Vivo</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="dead" name="status" value="Dead">
+            <label for="A2">Muerto</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="unknown" name="status" value="unknown">
+            <label for="A3">Desconocido</label>
+          </div>
+        </li>
+      </ul>
     </div>
     <!-- Opción filtro  de genero-->
-   <div class="item">
-     <li class="genero">Género</li>
+    <div class="item">
+      <button class="gender">Género</button>
       <ul>
-    <!-- Opciones sub filtro-->
-        <li> <div class="sub-item">
-          <input type="radio" id="female" name="gender" value="Female">
-          <label for="female">Femenino</label>
-        </div></li>
-        <li> <div class="sub-item">
-          <input type="radio" id="male" name="gender" value="Male">
-          <label for="male">Masculino</label>
-        </div></li>
-        <li> <div class="sub-item">
-          <input type="radio" id="unknownGender" name="gender" value="unknown">
-          <label for="unknownDos">Desconocido</label>
-        </div></li>
+        <!-- Opciones sub filtro-->
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Femenino</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Masculino</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="unknownGender" name="gender" value="unknown">
+            <label for="unknownDos">Desconocido</label>
+          </div>
+        </li>
       </ul>
-   </div>
-<!-- elementos dentro del filtro de especie -->
-   <div class= "item">
-     <li class="species">Especie</li>
+    </div>
+    <!-- elementos dentro del filtro de especie -->
+    <div class="item">
+      <button class="species">Especie</button>
       <ul>
-        <li> <div class="sub-item">
-          <input type="radio" id="human" name="specie" value="Human">
-          <label for="human">Humano</label>
-        </div></li>
-        <li> <div class="sub-item">
-          <input type="radio" id="alien" name="specie" value="Alien">
-          <label for="alien">Alien</label>
-        </div></li>
-        <li> <div class="sub-item">
-          <input type="radio" id="humanoid" name="specie" value="Humanoid">
-          <label for="humanoid">Humanoide</label>
-        </div></li>
-        <li> <div class="sub-item">
-          <input type="radio" id="animal" name="specie" value="Animal">
-          <label for="animal">Animal</label>
-        </div></li>
-        <li> <div class="sub-item">
-          <input type="radio" id="robot" name="specie" value="Robot">
-          <label for="robot">Robot</label>
-        </div></li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="human" name="specie" value="Human">
+            <label for="human">Humano</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="alien" name="specie" value="Alien">
+            <label for="alien">Alien</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="humanoid" name="specie" value="Humanoid">
+            <label for="humanoid">Humanoide</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="animal" name="specie" value="Animal">
+            <label for="animal">Animal</label>
+          </div>
+        </li>
+        <li>
+          <div class="sub-item">
+            <input type="radio" id="robot" name="specie" value="Robot">
+            <label for="robot">Robot</label>
+          </div>
+        </li>
       </ul>
-   </div>
-</aside>
-
-
-<!--Cartas de personajes-->
-  <div class="flex-container"> 
+    </div>
+  </aside>
+  <!--Cartas de personajes-->
+  <div class="flex-container">
     <div class="character"> </div>
-  </div>  
+  </div>
+  <!--    <div class="specifications">
+    <p><img id="header" src="encabezado.png"></p>
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+    <img class="card" src="tarjeta.png">
+  </div>  -->
 
-  
-    <script src="main.js" type="module"></script>
-  </body>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
